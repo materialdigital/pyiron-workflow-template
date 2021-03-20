@@ -1,5 +1,5 @@
-# pyiron publication template
-This is a template repository how you can publish your calculation with pyiron. It consists of the repository [itself](https://github.com/pyiron/pyiron-publication-template), a small [website](http://pyiron.org/pyiron-publication-template/) created with Jupyterbook and a [mybinder environment](https://mybinder.org/v2/gh/pyiron/pyiron-publication-template/HEAD?filepath=notebooks%2Fexample.ipynb) for testing the calculation. 
+# pyiron workflow template
+This is a template repository how you can publish your calculation with pyiron. It consists of the repository [itself](https://github.com/materialdigital/pyiron-workflow-template), a small [website](http://materialdigital.github.io/pyiron-workflow-template/) created with Jupyterbook and a [mybinder environment](https://mybinder.org/v2/gh/materialdigital/pyiron-workflow-template/HEAD?filepath=notebooks%2Fexample.ipynb) for testing the calculation. 
 
 You can fork this repository and populate it with your own data.
 
