@@ -24,7 +24,7 @@ jobs:
       run: |
         pip install git+https://github.com/ExecutableBookProject/jupyter-book
         echo "- file: README.md" > _toc.yml
-        for f in $(find . -name *.ipynb | sort -n); do echo "- file: ${f}" >> _toc.yml; done
+        for f in $(find . -name '*.ipynb' | sort -n); do echo "- file: ${f}" >> _toc.yml; done
         curl https://pyiron.org/images/logo_dark.png --output logo_dark.png
         bash .github/ci_support/write_book_config.sh
         rm CODE_OF_CONDUCT.md LICENSE
