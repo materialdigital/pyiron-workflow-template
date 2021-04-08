@@ -60,12 +60,13 @@ In order to register the workflow in the PMD workflow store, the file `meta.json
 | Key | Requirement | Description|
 |-----|------------|------------|
 | label | Mandatory | the Label of the workflow |
+| workflow_environment | Mandatory | pyiron or simstack |
 | description | Mandatory | the description of the workflow |
-| authors | Mandatory | a comma-separated list of authors |
-| git_url | Mandatory | link to the workflow git repository |
-| release | Mandatory | a dictionary consists of the following keys: <br> - latest_release_tag <br> - latest_release_date |
-| state | Mandatory | a dictionary consists of the following keys: <br> - development_status #:'development or production <br> - registration #: True/False based on the registration status in PMD workflow registry <br> - CI/CD #: Failing/Passing based on the status of the compatibility of the workflow with the proposed PMD docker image | 
+| authors | Mandatory | a dictionary with keys of authors' names and values of their email addresses |
+| release | Mandatory | a dictionary consists of the following keys: <br> - latest_release_tag <br> - latest_release_date | 
 | keywords | Mandatory | a comma-separated list of keywords for the workflow (From a list of available keywords, making it possible to be queried via Ontology) |
+| categories | Mandatory | a comma separated list of categories, e.g., atomistics, continuum, experimental|
+| steps/codes | Mandatory | a comma separated list of steps/codes, e.g., LAMMPS, DAMASK, calculation of elastic modulus|
 | licenses | Optional | a dictionary where the keys are the packages used in the workflow and the values are the corresponding license type. <br> e.g. 'pyiron':'BSD-3' |
 | publications | Optional | a comma-separated list of publications |  
 
