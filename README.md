@@ -64,7 +64,6 @@ In order to register the workflow in the PMD workflow store, the file `meta.json
 | authors | Mandatory | a comma-separated list of authors |
 | git_url | Mandatory | link to the workflow git repository |
 | release | Mandatory | a dictionary consists of the following keys: <br> - latest_release_tag <br> - latest_release_date |
-| docker_image | Mandatory | a dictionary consists of the following keys: <br>- image #name of the image, e.g. pyiron/continuum <br> - tag #tag of the image, e.g. 2021-03-24 <br> - digest #digest of the image, e.g., sha256:531be5c3d9bfe5b295b1587b164d93ef24939753949156a56b29947bd2cfd215|
 | state | Mandatory | a dictionary consists of the following keys: <br> - development_status #:'development or production <br> - registration #: True/False based on the registration status in PMD workflow registry <br> - CI/CD #: Failing/Passing based on the status of the compatibility of the workflow with the proposed PMD docker image | 
 | keywords | Mandatory | a comma-separated list of keywords for the workflow (From a list of available keywords, making it possible to be queried via Ontology) |
 | licenses | Optional | a dictionary where the keys are the packages used in the workflow and the values are the corresponding license type. <br> e.g. 'pyiron':'BSD-3' |
