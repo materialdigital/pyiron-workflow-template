@@ -1,24 +1,29 @@
 {
     "Mendatory": {
+        "workflow_environment":"pyiron/simstack",
         "label": "label of the workflow",
-        "authors": [
-            "author1",
-            "author2"
-        ],
+        "authors": {
+            "author1":"email_address",
+            "author2":"email_address"
+        },
         "description": "description of what the workflow does",
-        "git_url": "the url of the remote git repository",
         "release": {
             "latest_release_date": "e.g., 2021-04-07",
             "latest_release_tag": "e.g., 0.0.1"
         },
-        "state": {
-            "development_status": "development/production",
-            "regisration": "True/False",
-            "CI/CD": "Passing/Failing"
-        },
         "keywords": [
             "keyword1",
             "keyword2"
+        ],
+        "categories":[
+            "category1, e.g., continuum/atomistics/experimental",
+            "catergory2, e.g., continuum/atomistics/experimental"
+        ],
+        "steps/codes":[
+            "step1, e.g., calculation of elastic modulus",
+            "code1, e.g., LAMMPS",
+            "step2, e.g., macroscopic response",
+            "code2, e.g., DAMASK"
         ]
     },
     "Optional": {
