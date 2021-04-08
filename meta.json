@@ -7,11 +7,6 @@
         ],
         "description": "description of what the workflow does",
         "git_url": "the url of the remote git repository",
-        "docker_image": {
-            "image": "image_name, e.g. pyiron/pyiron",
-            "tag": "image_tag (not latest), e.g, 2021-03-17",
-	        "digest": "image_hash, e.g. f0f1cade794be0a8c8525c271f053663dcaf01fb380e41f492c23ead0e484eba"
-        },
         "release": {
             "latest_release_date": "e.g., 2021-04-07",
             "latest_release_tag": "e.g., 0.0.1"
