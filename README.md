@@ -54,5 +54,22 @@ Besides the conda environment in `environment.yml` the `.binder/postBuild` scrip
 ### Continous integration 
 The rest of the files in the repository are used to test the environment. For continous integration the github actions are defined in `.github/workflows/notebooks.yml`. Again the conda environment file `environment.yml` is used to install all the dependencies, afterwards pyiron is configured in the test environment using `.github/ci_support/pyironconfig.py` and finally the notebooks are executed using `.github/ci_support/build_notebooks.sh`. Usually there is no need for the user to adjust any of these files other than the conda environment `environment.yml` file.
 
+### Metadata 
+In order to register the workflow in the PMD workflow store, the file `meta.json` is required. The file includes the essential metadata. The keys and their possible values are listed in the following table:
+
+| Key | Requirement | Description|
+|-----|------------|------------|
+| Label | Mandatory | The Label of the workflow |
+| Description | Mandatory | The description of the workflow |
+| Authors | Mandatory | A comma-separated list of authors |
+| git_url | Mandatory | Link to the workflow git repository |
+| Release | Mandatory | A dictionary consists of the following keys: <br> - latest_release_tag <br> - latest_release_date |
+| docker_image | Mandatory | A dictionary consists of the following keys: <br>- image #name of the image, e.g. pyiron/continuum <br> - tag #tag of the image, e.g. 2021-03-24 <br> - digest #digest of the image, e.g., sha256:531be5c3d9bfe5b295b1587b164d93ef24939753949156a56b29947bd2cfd215|
+| State | Mandatory | A dictionary consists of the following keys: <br> - development_status #:'development or production <br> - registration #: True/False based on the registration status in PMD workflow registry <br> - CI/CD #: Failing/Passing based on the status of the compatibility of the workflow with the proposed PMD docker image | 
+| Keywords | Mandatory | a comma-separated list of keywords for the workflow (From a list of available keywords, making it possible to be queried via Ontology) |
+| Licenses | Optional | a dictionary where the keys are the packages used in the workflow and the values are the corresponding license type. <br> e.g. 'pyiron':'BSD-3' |
+| Publications | Optional | a comma-separated list of publications |  
+
+
 ### License
 pyiron and also the pyiron publication template are licensed under the BSD-3-Clause license which is included in the `LICENSE` file. In addition an `CODE_OF_CONDUCT.md` file is included to foster an open and welcoming environment.
