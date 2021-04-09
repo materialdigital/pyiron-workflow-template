@@ -54,5 +54,22 @@ Besides the conda environment in `environment.yml` the `.binder/postBuild` scrip
 ### Continous integration 
 The rest of the files in the repository are used to test the environment. For continous integration the github actions are defined in `.github/workflows/notebooks.yml`. Again the conda environment file `environment.yml` is used to install all the dependencies, afterwards pyiron is configured in the test environment using `.github/ci_support/pyironconfig.py` and finally the notebooks are executed using `.github/ci_support/build_notebooks.sh`. Usually there is no need for the user to adjust any of these files other than the conda environment `environment.yml` file.
 
+### Metadata 
+In order to register the workflow in the PMD workflow store, the file `meta.json` is required. The file includes the essential metadata. The keys and their possible values are listed in the following table:
+
+| Key | Requirement | Description|
+|-----|------------|------------|
+| label | Mandatory | the Label of the workflow |
+| workflow_environment | Mandatory | pyiron or simstack |
+| description | Mandatory | the description of the workflow |
+| authors | Mandatory | a dictionary with keys of authors' names and values of their email addresses |
+| release | Mandatory | a dictionary consists of the following keys: <br> - latest_release_tag <br> - latest_release_date | 
+| keywords | Mandatory | a comma-separated list of keywords for the workflow (From a list of available keywords, making it possible to be queried via Ontology) |
+| categories | Mandatory | a comma separated list of categories, e.g., atomistics, continuum, experimental|
+| steps/codes | Mandatory | a comma separated list of steps/codes, e.g., LAMMPS, DAMASK, calculation of elastic modulus|
+| licenses | Optional | a dictionary where the keys are the packages used in the workflow and the values are the corresponding license type. <br> e.g. 'pyiron':'BSD-3' |
+| publications | Optional | a comma-separated list of publications |  
+
+
 ### License
 pyiron and also the pyiron publication template are licensed under the BSD-3-Clause license which is included in the `LICENSE` file. In addition an `CODE_OF_CONDUCT.md` file is included to foster an open and welcoming environment.
