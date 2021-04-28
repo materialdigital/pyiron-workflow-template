@@ -68,8 +68,8 @@ In order to register the workflow in the PMD workflow store, the file `meta.json
 | categories | Optional | a list of categories, e.g., atomistics, continuum, experimental|
 | steps/codes | Optional | a list of steps/codes, e.g., LAMMPS, DAMASK, calculation of elastic modulus|
 | licenses | Optional | a dictionary where the keys are the packages used in the workflow and the values are the corresponding license type. <br> e.g. 'pyiron':'BSD-3' |
-| publications | Optional |a list of publications |  
-
+| publications | Optional | a list of publications |  
+| logo | Optional | path to the logo of the workflow within the repository|  
 
 ### License
 pyiron and also the pyiron publication template are licensed under the BSD-3-Clause license which is included in the `LICENSE` file. In addition an `CODE_OF_CONDUCT.md` file is included to foster an open and welcoming environment.
