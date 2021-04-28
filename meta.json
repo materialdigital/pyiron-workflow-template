@@ -1,15 +1,12 @@
 {
     "workflow_environment":"pyiron/simstack",
-    "label": "label of the workflow",
-    "authors": {
-        "author1":"email_address",
-        "author2":"email_address"
-    },
+    "title": "title of the workflow",
+    "authors": [
+        "author1 <email_address>",
+        "author2 <email_address>"
+    ],
     "description": "description of what the workflow does",
-    "release": {
-        "latest_release_date": "e.g., 2021-04-07",
-        "latest_release_tag": "e.g., 0.0.1"
-    },
+    "release": "version"
     "keywords": [
         "keyword1",
         "keyword2"
@@ -31,5 +28,6 @@
     "publication": [
         "publication1",
         "publication2"
-    ]
+    ],
+    "logo" : "path_to_the_logo_within_the_repo"
 }
