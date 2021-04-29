@@ -1,6 +1,6 @@
 {
-    "workflow_environment":"pyiron/simstack",
-    "title": "title of the workflow",
+    "workflow_environment":"pyiron",
+    "title": "pyiron workflow template",
     "authors": [
         "author1 <email_address>",
         "author2 <email_address>"
@@ -8,6 +8,8 @@
     "description": "description of what the workflow does",
     "release": "version",
     "keywords": [
+        "workflow",
+        "template"
         "keyword1",
         "keyword2"
     ],
