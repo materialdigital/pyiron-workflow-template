@@ -9,7 +9,7 @@
     "release": "version",
     "keywords": [
         "workflow",
-        "template"
+        "template",
         "keyword1",
         "keyword2"
     ],
