@@ -6,7 +6,7 @@
         "author2 <email_address>"
     ],
     "description": "description of what the workflow does",
-    "release": "version",
+    "release": "0.0.1",
     "keywords": [
         "workflow",
         "template",
