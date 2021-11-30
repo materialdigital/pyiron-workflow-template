@@ -6,6 +6,3 @@ mv .binder/.pyiron .
 
 # import dataset
 bash .github/ci_support/import_dataset.sh
-
-# install nglview
-bash .github/ci_support/install_nglview.sh
